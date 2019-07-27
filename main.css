@@ -7,11 +7,18 @@
 
 header {
     height: 100px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-image: url("img/Pattern-07.png");
+    display: flex;
+    align-items: center;
 }
 
-p {
-    background-color: lightgray;
+
+
+h1 {
+    font-family: Moonshot;
+    font-size: 7vw;
+    margin-left: 15px;
 }
 
 img {
@@ -19,7 +26,16 @@ img {
 }
 
 main {
+    height: 80vh;
     margin: auto;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.40),
+        rgba(255, 255, 255, 0.40),
+        rgba(255, 255, 255, 0.40),
+        rgb(254, 254, 255)),
+        url("img/Pattern-07.png");
+    background-size: 500px;
 }
 
 main a p {
@@ -74,9 +90,15 @@ label {
 }
 
 
+@font-face {
+    font-family: Moonshot;
+    src: url(fonts/Moonshot-Regular.otf);
+}
+
+
 @media only screen and (min-width: 700px) {
-    main img {
-        height: 500px;
+    h1 {
+        font-size: 4vw;
     }
 
     section {
