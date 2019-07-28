@@ -14,11 +14,21 @@ header {
 }
 
 
-
 h1 {
     font-family: Moonshot;
     font-size: 7vw;
     margin-left: 15px;
+}
+
+h2 {
+    font-family: Bluesky;
+    font-size: 7vw;
+    margin: 0 auto;
+}
+
+p {
+    font-family: Airspace;
+    font-size: 6vw;
 }
 
 img {
@@ -36,10 +46,36 @@ main {
         rgb(254, 254, 255)),
         url("img/Pattern-07.png");
     background-size: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-main a p {
-    margin-top: 50px;
+main p {
+    margin-left: 25px;
+    letter-spacing: 4px;
+    font-family: Airspace;
+}
+
+
+main a {
+    margin: 0 auto;
+    font-family: Airspace;
+    font-size: 5vw;
+    text-decoration: none;
+    color: black;
+    margin-top: 60%;
+}
+
+main a:hover {
+    -webkit-text-fill-color: beige; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.arrow {
+    margin-left: 11vw;
 }
 
 section {
@@ -93,6 +129,14 @@ label {
 @font-face {
     font-family: Moonshot;
     src: url(fonts/Moonshot-Regular.otf);
+}
+@font-face {
+    font-family: Bluesky;
+    src: url(fonts/Bluesky.otf);
+}
+@font-face {
+    font-family: Airspace;
+    src: url(fonts/AirSpace.otf);
 }
 
 
