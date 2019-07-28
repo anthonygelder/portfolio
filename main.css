@@ -1,5 +1,17 @@
+@font-face {
+    font-family: Moonshot;
+    src: url(fonts/Moonshot-Regular.otf);
+}
+@font-face {
+    font-family: Bluesky;
+    src: url(fonts/Bluesky.otf);
+}
+@font-face {
+    font-family: Airspace;
+    src: url(fonts/AirSpace.otf);
+}
+
 * {
-    /* border: solid 1px black; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,7 +19,6 @@
 
 header {
     height: 100px;
-    /* background-color: lightgray; */
     background-image: url("img/Pattern-07.png");
     display: flex;
     align-items: center;
@@ -24,6 +35,7 @@ h2 {
     font-family: Bluesky;
     font-size: 7vw;
     margin: 0 auto;
+    margin-bottom: 1em;
 }
 
 p {
@@ -33,6 +45,7 @@ p {
 
 img {
     width: 100%;
+    box-shadow: 0 0 4px #000;
 }
 
 main {
@@ -58,24 +71,32 @@ main p {
     font-family: Airspace;
 }
 
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-main a {
-    margin: 0 auto;
-    font-family: Airspace;
-    font-size: 5vw;
+a {
     text-decoration: none;
+}
+
+#projectLink div p {
+    margin-left: 0;
+    font-size: 5vw;
+    letter-spacing: 2px;
     color: black;
-    margin-top: 60%;
+    margin-top: 10em;
+}
+
+i {
+    color: black;
 }
 
 main a:hover {
     -webkit-text-fill-color: beige; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-}
-
-.arrow {
-    margin-left: 11vw;
 }
 
 section {
@@ -85,21 +106,45 @@ section {
     flex-direction: column;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h3 {
+    font-family: Moonshot;
+    font-size: 2em;
+    margin: 8px 0;
+}
+
+article a {
+    font-family: monospace;
+    font-size: 22px;
+}
+
+p:last-child {
+    font-size: 25px;
+}
+
+article p {
+    margin-top: 8px;
+}
+
 article, main, fieldset {
    width: 80%;
    margin-bottom: 40px;
 }
 
-footer {
-    display: block;
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #000;
+    border: none;
 }
 
-input {
-    width: 100%;
-}
-
-textarea {
-    width: 100%;
+input:hover, textarea:hover {
+    box-shadow: 0 0 4px #000;
 }
 
 .icon {
@@ -114,35 +159,72 @@ div {
 
 fieldset {
     margin: auto;
+    border: none;
 }
 
 input {
     margin-bottom: 20px; 
+    margin-top: 8px;
+    height: 30px;
 }
 
 label {
-    background-color: lightgray;
-
-}
-
-
-@font-face {
-    font-family: Moonshot;
-    src: url(fonts/Moonshot-Regular.otf);
-}
-@font-face {
-    font-family: Bluesky;
-    src: url(fonts/Bluesky.otf);
-}
-@font-face {
+    font-size: 1.5em;
     font-family: Airspace;
-    src: url(fonts/AirSpace.otf);
+}
+
+textarea {
+    margin-top: 7px;
+}
+
+button {
+    height: 60px;
+    width: 100px;
+    margin-top: 5px;
+    background-color: transparent;
+    background-image: url("img/Pattern-07.png");
+    background-size: 300px;
+    border-radius: 5px;
+    border: solid 1px black;
+    font-family: Moonshot;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+button:hover {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background-color: beige;
+    background-image: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 30px;
+}
+
+footer i:hover {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: beige;
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 775px) {
     h1 {
         font-size: 4vw;
+    }
+
+    main p {
+        margin-left: 30px;
+    }
+
+    #projectLink div p {
+        margin-top: 5em;
     }
 
     section {
@@ -151,11 +233,42 @@ label {
         flex-direction: row;
     }
 
+    #contact {
+        margin-top: 75px;
+    }
+  }
+
+@media only screen and (min-width: 1050px) {
+    h2 {
+        font-size: 5vw;
+    }
+    main p {
+        font-size: 3em;
+    }
+    #projectLink div p {
+        font-size: 3em;
+    }
+
     article {
-        margin: 15px;
+        width: 35vw;
+    }
+
+    #projects {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    article p {
+        font-size: 3em;
+    }
+
+    #contact {
+        width: 60%;
     }
 
     footer {
-        margin: 30px 0;
+        width: 60%;
+        margin-left: auto; 
+        margin-right: auto; 
     }
-  }
+}
