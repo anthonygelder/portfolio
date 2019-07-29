@@ -181,9 +181,8 @@ button {
     height: 60px;
     width: 100px;
     margin-top: 5px;
-    background-color: transparent;
     background-image: url("img/Pattern-07.png");
-    background-size: 300px;
+    background-size: 310px;
     border-radius: 5px;
     border: solid 1px black;
     font-family: Moonshot;
@@ -193,7 +192,6 @@ button {
 }
 
 button:hover {
-    color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     background-color: beige;
