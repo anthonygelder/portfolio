@@ -24,7 +24,6 @@ header {
     align-items: center;
 }
 
-
 h1 {
     font-family: Moonshot;
     font-size: 7vw;
@@ -114,8 +113,14 @@ article {
 
 h3 {
     font-family: Moonshot;
-    font-size: 2em;
-    margin: 8px 0;
+    font-size: 9vw;
+    margin: 15px 0 10px 0;
+}
+
+h4 {
+    font-family: Moonshot;
+    font-size: 6vw;
+    margin: 5px 0;
 }
 
 article a {
