@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-family: Bluesky;
-    font-size: 7vw;
+    font-size: 4em;
     margin: 0 auto;
     margin-bottom: 1em;
 }
@@ -55,7 +55,7 @@ main {
         180deg,
         rgba(255, 255, 255, 0.40),
         rgba(255, 255, 255, 0.40),
-        rgba(255, 255, 255, 0.40),
+        rgba(255, 255, 255, 0.651),
         rgb(254, 254, 255)),
         url("img/Pattern-07.png");
     background-size: 500px;
