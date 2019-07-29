@@ -239,15 +239,34 @@ footer i:hover {
     #contact {
         margin-top: 75px;
     }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    #projects {
+        flex-direction: column;
+    }
   }
 
 @media only screen and (min-width: 1050px) {
     h2 {
         font-size: 5vw;
     }
+
+    h3 {
+        font-size: 4vw;
+        margin: 60px 0;
+    }
+
+    h4 {
+        font-size: 2vw;
+    }
+
     main p {
         font-size: 3em;
     }
+
     #projectLink div p {
         font-size: 3em;
     }
@@ -256,10 +275,7 @@ footer i:hover {
         width: 35vw;
     }
 
-    #projects {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
+
 
     article p {
         font-size: 3em;
