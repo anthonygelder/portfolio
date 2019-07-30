@@ -34,6 +34,7 @@ h2 {
     font-family: Bluesky;
     font-size: 4em;
     margin: 0 auto;
+    margin-top: 25px;
 }
 
 p {
@@ -59,7 +60,7 @@ main {
     background-size: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -77,6 +78,10 @@ div {
 
 a {
     text-decoration: none;
+}
+
+#projectLink {
+    margin-top: auto;
 }
 
 #projectLink div p {
@@ -222,16 +227,8 @@ footer i:hover {
         font-size: 4vw;
     }
 
-    h2 {
-        /* margin-top: 20%; */
-    }
-
     main p {
         margin-left: 30px;
-    }
-
-    #projectLink div p {
-        /* margin-top: 5em; */
     }
 
     section {
@@ -295,17 +292,5 @@ footer i:hover {
         width: 60%;
         margin-left: auto; 
         margin-right: auto; 
-    }
-}
-
-@media only screen and (max-height: 580px) {
-    h2 {
-        margin-top: 100px;
-    }
-}
-
-@media only screen and (max-height: 880px) {
-    h2 {
-        margin-top: 120px;
     }
 }
