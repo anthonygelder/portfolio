@@ -34,7 +34,6 @@ h2 {
     font-family: Bluesky;
     font-size: 4em;
     margin: 0 auto;
-    margin-bottom: 1em;
 }
 
 p {
@@ -85,7 +84,7 @@ a {
     font-size: 5vw;
     letter-spacing: 2px;
     color: black;
-    margin-top: 10em;
+    margin-top: 15vh;
 }
 
 i {
@@ -146,6 +145,7 @@ input, textarea {
     border-radius: 5px;
     box-shadow: 0 0 2px #000;
     border: none;
+    padding: 5px;
 }
 
 input:hover, textarea:hover {
@@ -217,9 +217,13 @@ footer i:hover {
 }
 
 
-@media only screen and (min-width: 775px) {
+@media only screen and (min-width: 768px) {
     h1 {
         font-size: 4vw;
+    }
+
+    h2 {
+        margin-top: 20%;
     }
 
     main p {
@@ -227,7 +231,7 @@ footer i:hover {
     }
 
     #projectLink div p {
-        margin-top: 5em;
+        /* margin-top: 5em; */
     }
 
     section {
@@ -249,9 +253,11 @@ footer i:hover {
     }
   }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1024px) {
     h2 {
         font-size: 5vw;
+        margin-top: 0;
+        margin-bottom: 100px;
     }
 
     h3 {
@@ -289,5 +295,11 @@ footer i:hover {
         width: 60%;
         margin-left: auto; 
         margin-right: auto; 
+    }
+}
+
+@media only screen and (max-height: 580px) {
+    h2 {
+        margin-top: 100px;
     }
 }
