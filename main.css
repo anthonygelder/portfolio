@@ -223,7 +223,7 @@ footer i:hover {
     }
 
     h2 {
-        margin-top: 20%;
+        /* margin-top: 20%; */
     }
 
     main p {
@@ -256,7 +256,7 @@ footer i:hover {
 @media only screen and (min-width: 1024px) {
     h2 {
         font-size: 5vw;
-        margin-top: 0;
+        /* margin-top: 12%; */
         margin-bottom: 100px;
     }
 
@@ -301,5 +301,11 @@ footer i:hover {
 @media only screen and (max-height: 580px) {
     h2 {
         margin-top: 100px;
+    }
+}
+
+@media only screen and (max-height: 880px) {
+    h2 {
+        margin-top: 120px;
     }
 }
