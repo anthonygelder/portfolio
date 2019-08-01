@@ -102,6 +102,10 @@ main a:hover {
     -webkit-text-stroke-color: black;
 }
 
+#projects {
+    margin-top: 30%;
+}
+
 section {
     display: flex;
     align-items: center;
@@ -273,11 +277,13 @@ footer i:hover {
         font-size: 3em;
     }
 
+    #projects {
+        margin-top: 10%;
+    }
+
     article {
         width: 35vw;
     }
-
-
 
     article p {
         font-size: 3em;
