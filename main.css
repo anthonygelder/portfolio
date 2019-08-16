@@ -6,16 +6,6 @@
     font-family: Bluesky;
     src: url(fonts/Bluesky.otf);
 }
-@font-face {
-    font-family: Airspace;
-    src: url(fonts/AirSpace.otf);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 header {
     height: 100px;
