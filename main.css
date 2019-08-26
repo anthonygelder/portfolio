@@ -106,6 +106,14 @@ section {
 article {
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.40),
+        rgba(255, 255, 255, 0.40),
+        rgba(255, 255, 255, 0.651),
+        rgb(254, 254, 255)),
+        url("img/Pattern-07.png");
 }
 
 
@@ -241,6 +249,10 @@ footer i:hover {
 
     #projects {
         flex-direction: column;
+    }
+
+    article {
+        width: 40%;
     }
   }
 
