@@ -38,13 +38,13 @@ img {
 }
 
 main {
-    height: 80vh;
+    height: 100%;
     margin: auto;
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.40),
-        rgba(255, 255, 255, 0.40),
-        rgba(255, 255, 255, 0.651),
+        rgba(255, 255, 255, 0.767),
+        rgb(255, 255, 255),
         rgb(254, 254, 255)),
         url("img/Pattern-07.png");
     background-size: 500px;
@@ -71,10 +71,12 @@ a {
 }
 
 #projectLink {
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#projectLink div p {
+#projectLink > p {
     margin-left: 0;
     font-size: 5vw;
     letter-spacing: 2px;
@@ -107,11 +109,12 @@ article {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    padding: 0 10px;
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.40),
-        rgba(255, 255, 255, 0.40),
-        rgba(255, 255, 255, 0.651),
+        rgba(255, 255, 255, 0.767),
+        rgba(255, 255, 255, 0.76),
         rgb(254, 254, 255)),
         url("img/Pattern-07.png");
 }
@@ -214,6 +217,7 @@ footer {
     display: flex;
     justify-content: space-around;
     margin: 30px 30px;
+    width: 100%;
 }
 
 footer i:hover {
@@ -222,7 +226,6 @@ footer i:hover {
     -webkit-text-stroke-color: black;
     color: beige;
 }
-
 
 @media only screen and (min-width: 768px) {
     h1 {
@@ -252,7 +255,7 @@ footer i:hover {
     }
 
     article {
-        width: 40%;
+        width: 80%;
     }
   }
 
@@ -281,10 +284,6 @@ footer i:hover {
 
     #projects {
         margin-top: 10%;
-    }
-
-    article {
-        width: 35vw;
     }
 
     article p {
