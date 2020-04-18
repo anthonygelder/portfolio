@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: Moonshot;
     src: url(fonts/Moonshot-Regular.otf);
 }
 @font-face {
     font-family: Bluesky;
-    src: url(fonts/Bluesky.otf);
+    src: url(fonts/srinthile.otf);
 }
 
 header {
@@ -24,7 +29,9 @@ h2 {
     font-family: Bluesky;
     font-size: 4em;
     margin: 0 auto;
-    margin-top: 25px;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
 p {
@@ -46,7 +53,7 @@ main {
         rgba(255, 255, 255, 0.767),
         rgb(255, 255, 255),
         rgb(254, 254, 255)),
-        url("img/Pattern-07.png");
+        url("img/rain.png");
     background-size: 500px;
     display: flex;
     flex-direction: column;
@@ -77,8 +84,9 @@ a {
 }
 
 #projectLink > p {
+    font-family: Moonshot;
     margin-left: 0;
-    font-size: 5vw;
+    font-size: 7vw;
     letter-spacing: 2px;
     color: black;
     margin-top: 15vh;
@@ -116,14 +124,13 @@ article {
         rgba(255, 255, 255, 0.767),
         rgba(255, 255, 255, 0.76),
         rgb(254, 254, 255)),
-        url("img/Pattern-07.png");
+        url("img/rain.png");
 }
 
 
 h3 {
-    font-family: Moonshot;
-    font-size: 9vw;
-    margin: 15px 0 10px 0;
+    font-family: Bluesky;
+    font-size: 14vw;
 }
 
 h4 {
@@ -246,10 +253,6 @@ footer i:hover {
         margin-top: 75px;
     }
 
-    h3 {
-        font-size: 6vw;
-    }
-
     #projects {
         flex-direction: column;
     }
@@ -261,24 +264,22 @@ footer i:hover {
 
 @media only screen and (min-width: 1024px) {
     h2 {
-        font-size: 5vw;
-        margin-bottom: 30px;
+        font-size: 9vw;
     }
 
     h3 {
-        font-size: 4vw;
-        margin: 60px 0;
+        font-size: 8vw;
     }
 
     h4 {
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     main p {
         font-size: 3em;
     }
 
-    #projectLink div p {
+    #projectLink p {
         font-size: 3em;
     }
 
