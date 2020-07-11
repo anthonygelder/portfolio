@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: Moonshot;
+    src: url(fonts/GoodVibes-Bold.otf);
+}
+
+@font-face {
+    font-family: Bluesky;
+    src: url(fonts/srinthile.otf);
+}
+
+@font-face {
+    font-family: Celebrate;
+    src: url(fonts/Celebrate.otf);
+}
+
+header {
+    height: 100px;
+    background-image: url("img/Pattern-08.png");
+    background-size: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: Moonshot;
+    color: rgb(21, 155, 244);
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px #33ff00;
+    letter-spacing: 2px;
+    font-size: 7vw;
+    margin-left: 15px;
+}
+
+h2 {
+    font-family: Bluesky;
+    font-size: 4em;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: Celebrate;
+    font-size: 6vw;
+    color: white;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0 0 4px #000;
+}
+
+main {
+    height: 100%;
+    margin: auto;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.226),
+        rgba(0, 0, 0, 0.507),
+        rgba(0, 0, 0, 0.795),
+        rgb(0, 0, 0)),
+        url("img/Pattern-08.png");
+    background-size: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+main p {
+    margin-left: 25px;
+    letter-spacing: 4px;
+    font-family: Celebrate;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#projectLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projectLink > p {
+    font-family: Moonshot;
+    margin-left: 0;
+    font-size: 7vw;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    margin-top: 15vh;
+}
+
+i {
+    color: rgb(255, 255, 255);
+}
+
+main a:hover {
+    -webkit-text-fill-color: rgb(53, 255, 2); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#projects {
+    margin-top: 30%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0 10px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.226),
+        rgba(0, 0, 0, 0.507),
+        rgba(0, 0, 0, 0.795),
+        rgb(0, 0, 0)),
+        url("img/Pattern-08.png");
+    background-size: 500px;
+}
+
+
+h3 {
+    font-family: Bluesky;
+    font-size: 14vw;
+}
+
+h4 {
+    font-family: Moonshot;
+    font-size: 6vw;
+    margin: 5px 0;
+}
+
+article a {
+    font-family: monospace;
+    font-size: 22px;
+}
+
+p:last-child {
+    font-size: 25px;
+}
+
+article p {
+    margin-top: 8px;
+}
+
+article, main, fieldset {
+   width: 80%;
+   margin-bottom: 40px;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #000;
+    border: none;
+    padding: 5px;
+}
+
+input:hover, textarea:hover {
+    box-shadow: 0 0 4px #000;
+}
+
+.icon {
+    width: 50px;
+    margin: 15px 0;
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset {
+    margin: auto;
+    border: none;
+}
+
+input {
+    margin-bottom: 20px; 
+    margin-top: 8px;
+    height: 30px;
+}
+
+label {
+    font-size: 1.5em;
+    font-family: Celebrate;
+}
+
+textarea {
+    margin-top: 7px;
+}
+
+button {
+    height: 60px;
+    width: 100px;
+    margin-top: 5px;
+    background-image: url("img/Pattern-08.png");
+    background-size: 310px;
+    border-radius: 5px;
+    border: solid 1px black;
+    font-family: Moonshot;
+    font-size: 28px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+button:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background-color: beige;
+    background-image: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 30px;
+    width: 100%;
+}
+
+footer i:hover {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: beige;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4vw;
+    }
+
+    main p {
+        margin-left: 30px;
+    }
+
+    section {
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+    }
+
+    #contact {
+        margin-top: 75px;
+    }
+
+    #projects {
+        flex-direction: column;
+    }
+
+    article {
+        width: 80%;
+    }
+  }
+
+@media only screen and (min-width: 1024px) {
+    h2 {
+        font-size: 9vw;
+    }
+
+    h3 {
+        font-size: 8vw;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    main p {
+        font-size: 3em;
+    }
+
+    #projectLink p {
+        font-size: 3em;
+    }
+
+    #projects {
+        margin-top: 10%;
+    }
+
+    article p {
+        font-size: 3em;
+    }
+
+    #contact {
+        width: 60%;
+    }
+
+    footer {
+        width: 60%;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
