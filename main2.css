@@ -28,6 +28,7 @@ header {
     background-size: 1000px;
     display: flex;
     align-items: center;
+    border-bottom: solid 8px #A5CE39;
 }
 
 h1 {
@@ -46,7 +47,7 @@ h2 {
     margin: 0 auto;
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: #33ff00;
 }
 
 p {
@@ -150,17 +151,35 @@ article {
 h3 {
     font-family: Bluesky;
     font-size: 14vw;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+#contactHeader {
+    font-size: 7vw;
 }
 
 h4 {
     font-family: Moonshot;
     font-size: 6vw;
     margin: 5px 0;
+    color: rgb(21, 155, 244);
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px #33ff00;
+    letter-spacing: 2px;
 }
 
 article a {
     font-family: monospace;
     font-size: 22px;
+    color: #A5CE39;
+}
+
+article a:hover {
+    font-family: monospace;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
 }
 
 p:last-child {
@@ -185,7 +204,7 @@ input, textarea {
 }
 
 input:hover, textarea:hover {
-    box-shadow: 0 0 4px #000;
+    box-shadow: 0 0 4px rgb(53, 255, 2);
 }
 
 .icon {
@@ -212,6 +231,7 @@ input {
 label {
     font-size: 1.5em;
     font-family: Celebrate;
+    color: white;
 }
 
 textarea {
@@ -221,21 +241,24 @@ textarea {
 button {
     height: 60px;
     width: 100px;
+    color: rgb(255, 255, 255);
     margin-top: 5px;
     background-image: url("img/Pattern-08.png");
     background-size: 310px;
     border-radius: 5px;
-    border: solid 1px black;
+    border: solid 2px #A5CE39;
     font-family: Moonshot;
-    font-size: 28px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    letter-spacing: 3px;
+    font-size: 34px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 button:hover {
+    color: #A5CE39;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    background-color: beige;
+    -webkit-text-stroke-color: A5CE39;
+    background-color: #181F1D;
     background-image: none;
 }
 
@@ -247,10 +270,9 @@ footer {
 }
 
 footer i:hover {
-    color: white;
+    color: rgb(2, 2, 2);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: beige;
+    -webkit-text-stroke-color: #A5CE39;
 }
 
 @media only screen and (min-width: 768px) {
