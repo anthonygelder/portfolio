@@ -19,7 +19,8 @@ body {
 
 @font-face {
     font-family: Celebrate;
-    src: url(fonts/Celebrate.otf);
+    src: url(fonts/HIGaffaSansLight.otf);
+
 }
 
 header {
@@ -39,6 +40,7 @@ h1 {
     letter-spacing: 2px;
     font-size: 7vw;
     margin-left: 15px;
+
 }
 
 h2 {
@@ -48,6 +50,7 @@ h2 {
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #33ff00;
+    text-shadow: 3px 3px rgb(127, 196, 243);
 }
 
 p {
@@ -67,8 +70,8 @@ main {
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.226),
-        rgba(0, 0, 0, 0.507),
+        rgba(0, 0, 0, 0.425),
+        rgba(0, 0, 0, 0.637),
         rgba(0, 0, 0, 0.795),
         rgb(0, 0, 0)),
         url("img/Pattern-08.png");
@@ -153,7 +156,7 @@ h3 {
     font-size: 14vw;
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: #33ff00;
 }
 
 #contactHeader {

@@ -11,6 +11,10 @@
     font-family: Bluesky;
     src: url(fonts/srinthile.otf);
 }
+@font-face {
+    font-family: About;
+    src: url(fonts/Celebrate.otf);
+}
 
 header {
     height: 100px;
@@ -23,6 +27,11 @@ h1 {
     font-family: Moonshot;
     font-size: 7vw;
     margin-left: 15px;
+    color: #E1F6FF;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #F96969;
+    text-shadow: -3px -3px #F96969;
+
 }
 
 h2 {
@@ -31,11 +40,13 @@ h2 {
     margin: 0 auto;
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: #FBA6A6;
+    text-shadow: 3px 3px #FAE9D0;
+    color: rgb(212, 231, 245);
 }
 
 p {
-    font-family: Airspace;
+    font-family: About;
     font-size: 6vw;
 }
 
@@ -53,7 +64,7 @@ main {
         rgba(255, 255, 255, 0.767),
         rgb(255, 255, 255),
         rgb(254, 254, 255)),
-        url("img/rain.png");
+        url("img/Pattern-07.png");
     background-size: 500px;
     display: flex;
     flex-direction: column;
@@ -64,7 +75,6 @@ main {
 main p {
     margin-left: 25px;
     letter-spacing: 4px;
-    font-family: Airspace;
 }
 
 div {
@@ -124,7 +134,7 @@ article {
         rgba(255, 255, 255, 0.767),
         rgba(255, 255, 255, 0.76),
         rgb(254, 254, 255)),
-        url("img/rain.png");
+        url("img/Pattern-07.png");
 }
 
 
