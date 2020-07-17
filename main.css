@@ -16,6 +16,7 @@
     src: url(fonts/Celebrate.otf);
 }
 
+
 header {
     height: 100px;
     background-image: url("img/Pattern-07.png");
@@ -31,7 +32,6 @@ h1 {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #F96969;
     text-shadow: -3px -3px #F96969;
-
 }
 
 h2 {
@@ -40,9 +40,13 @@ h2 {
     margin: 0 auto;
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #FBA6A6;
-    text-shadow: 3px 3px #FAE9D0;
+    -webkit-text-stroke-color: rgb(247, 85, 85);
+    text-shadow: 3px 3px rgb(107, 71, 17);
     color: rgb(212, 231, 245);
+}
+
+.greeting {
+    display: none;
 }
 
 p {

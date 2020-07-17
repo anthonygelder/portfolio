@@ -13,14 +13,13 @@ body {
 }
 
 @font-face {
-    font-family: Bluesky;
-    src: url(fonts/srinthile.otf);
+    font-family: Celebrate;
+    src: url(fonts/HIGaffaSansLight.otf);
 }
 
 @font-face {
-    font-family: Celebrate;
-    src: url(fonts/HIGaffaSansLight.otf);
-
+    font-family: Blackheat;
+    src: url(fonts/Hermes-Regular.otf);
 }
 
 header {
@@ -44,13 +43,17 @@ h1 {
 }
 
 h2 {
-    font-family: Bluesky;
+    font-family: Blackheat;
     font-size: 4em;
-    margin: 0 auto;
+    margin: 30px auto;
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #33ff00;
     text-shadow: 3px 3px rgb(127, 196, 243);
+}
+
+.welcome {
+    display: none;
 }
 
 p {
@@ -152,7 +155,7 @@ article {
 
 
 h3 {
-    font-family: Bluesky;
+    font-family: Blackheat;
     font-size: 14vw;
     letter-spacing: 5px;
     -webkit-text-stroke-width: 2px;
@@ -160,7 +163,7 @@ h3 {
 }
 
 #contactHeader {
-    font-size: 7vw;
+    font-size: 3.5vw;
 }
 
 h4 {
