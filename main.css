@@ -113,7 +113,7 @@ i {
 }
 
 main a:hover {
-    -webkit-text-fill-color: beige; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: #83D4EA; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
@@ -240,15 +240,45 @@ button:hover {
 footer {
     display: flex;
     justify-content: space-around;
-    margin: 30px 30px;
-    width: 100%;
+    padding: 20px 0;
+    width: 100%;    
+    background: linear-gradient(
+        360deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.35),
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.9),
+        rgb(254, 254, 255)),
+        url("img/Pattern-07.png");
+        background-size: 400px;
 }
 
-footer i:hover {
-    color: white;
+/* footer i:hover {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: beige;
+} */
+
+footer a:nth-child(1) i:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #F96969;
+}
+footer a:nth-child(2) i:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #EFB560;
+}
+footer a:nth-child(3) i:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #F4C3C3;
+}
+footer a:nth-child(4) i:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #83D4EA;
 }
 
 @media only screen and (min-width: 768px) {
