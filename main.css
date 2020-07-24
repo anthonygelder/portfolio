@@ -47,7 +47,8 @@ h2 {
 }
 
 .me {
-    width: 25%;
+    margin-top: 40px;
+    width: 70%;
 }
 
 p {
@@ -286,6 +287,10 @@ footer a:nth-child(4) i:hover {
         font-size: 4vw;
     }
 
+    .me {
+        width: 45%;
+    }
+
     main p {
         margin-left: 30px;
     }
@@ -310,6 +315,11 @@ footer a:nth-child(4) i:hover {
   }
 
 @media only screen and (min-width: 1024px) {
+
+    .me {
+        width: 30%;
+    }
+
     h2 {
         font-size: 9vw;
     }
