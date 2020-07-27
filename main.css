@@ -256,12 +256,6 @@ footer {
         background-size: 1000px;
 }
 
-/* footer i:hover {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: beige;
-} */
-
 footer a:nth-child(1) i:hover {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;

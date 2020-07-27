@@ -47,13 +47,14 @@ h2 {
     font-size: 4em;
     margin: 30px auto;
     letter-spacing: 5px;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #33ff00;
-    text-shadow: 3px 3px rgb(127, 196, 243);
+    text-shadow: 4px 4px 5px rgb(0, 0, 0)
 }
 
-.welcome {
-    display: none;
+.me {
+    margin-top: 40px;
+    width: 70%;
 }
 
 p {
@@ -271,19 +272,35 @@ button:hover {
 footer {
     display: flex;
     justify-content: space-around;
-    margin: 30px 30px;
-    width: 100%;
+    padding: 40px 0;
+    margin-top: 100px;
+    width: 100%;    
+    background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.2),
+        rgba(2, 2, 2, 0.45),
+        rgba(2, 2, 2, 0.7),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.9),
+        rgb(0, 0, 0)),
+        url("img/Pattern-08.png");
+        background-size: 1000px;
 }
 
-footer i:hover {
-    color: rgb(2, 2, 2);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #A5CE39;
+footer a i:hover {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(2, 1, 1);
+    color: #A5CE39;
 }
 
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 4vw;
+    }
+
+    .me {
+        width: 45%;
     }
 
     main p {
@@ -310,6 +327,11 @@ footer i:hover {
   }
 
 @media only screen and (min-width: 1024px) {
+
+    .me {
+        width: 30%;
+    }
+
     h2 {
         font-size: 9vw;
     }
@@ -340,11 +362,5 @@ footer i:hover {
 
     #contact {
         width: 60%;
-    }
-
-    footer {
-        width: 60%;
-        margin-left: auto; 
-        margin-right: auto; 
     }
 }
